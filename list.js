@@ -1,9 +1,9 @@
 let grandtotal = 0;
 const addData = () => {
-  let name = document.getElementById("item-name-input").value;
-  let qty = document.getElementById("item-qty-input").value;
-  let price = document.getElementById("item-price-input").value;
-  let table = document.getElementById("table1");
+  let name = document.getElementById('item-name-input').value;
+  let qty = document.getElementById('item-qty-input').value;
+  let price = document.getElementById('item-price-input').value;
+  let table = document.getElementById('table1');
   let newRow = table.insertRow(table.rows.length - 1);
   let namecell = newRow.insertCell(0);
   let qtycell = newRow.insertCell(1);
@@ -16,7 +16,6 @@ const addData = () => {
   pricecell.innerHTML = price;
   totalprice.innerHTML = qty * price;
   grandtotal += qty * price;
-  document.getElementById("total").innerHTML =
-    "Total Ammount " + grandtotal + " $";
-  document.getElementById("myinputs").reset();
-};
+  document.getElementById('total').innerHTML = "Total Ammount " + grandtotal + " $";
+  document.getElementById('myinputs').reset();
+}
